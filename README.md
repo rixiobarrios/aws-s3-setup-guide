@@ -68,8 +68,6 @@ _Then_
 1.  When complete, click `download .csv file` and save the CSV to this repository.(this is
 the only time you'll be able to see your access key, but you can generate a new one anytime
 and are encouraged to rotate them frequently)
-1.  Click `Download Credentials`.
-1.  Save the file `credentials.csv` to this repository.
 1.  Click `Close`
 1.  Click on the newly created user.
 1.  Copy the `User ARN` _(Amazon Resource Name)_ at the top of the page and save it in [arn.txt](arn.txt).

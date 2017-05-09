@@ -42,7 +42,7 @@ Using restrictive access control with AWS ensures that even if an identity is
 
 1.  Open the [AWS Console](https://console.aws.amazon.com/console/) in your
  browser
-1.  From the `AWS` console open tabs for
+1.  From the `AWS` console, select `All Services`, and open tabs for
  `IAM` _(Identity and Access Management)_ and `S3` _(Simple Storage Service)_.
 
 ### Identity and Access Management (IAM)

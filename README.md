@@ -63,7 +63,7 @@ In the [IAM](https://console.aws.amazon.com/iam) tab:
 _Then_
 1.  Click on your newly created user.
 1.  Click on the security credentials tab.
-1.  Click the small red `x` to the right of your existing access key to delete it.
+1.  Click the small `x` to the right of your existing access key to delete it.
 1.  Click `Create access key`
 1.  When complete, click `download .csv file` and save the CSV to this repository.(this is
 the only time you'll be able to see your access key, but you can generate a new one anytime

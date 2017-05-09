@@ -120,7 +120,7 @@ In the [S3](https://console.aws.amazon.com/s3) tab:
         1.  Copy the JSON from the `Policy JSON Document` modal.
 
 1.  Return to the S3 tab.
-1.  Paste the bucket policy into the `Bucket Policy Editor` modal.
+1.  Paste the bucket policy into the `Bucket Policy Editor` field.
 1.  Click `Save`.
 1.  Click `Save` in the `Permissions` dropdown.
 

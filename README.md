@@ -96,7 +96,7 @@ In the [S3](https://console.aws.amazon.com/s3) tab:
 1.  Select `US East (N. Virginia)` for the `Region`.
 1.  Click `Create`.
 1.  Highlight your bucket and select the `Permissions` tab.
-1.  Click `Add bucket policy` near the bottom of the `Permissions` dropdown.
+1.  Click `Bucket policy` near the bottom of the `Permissions` dropdown.
 1.  At the bottom of the `Bucket Policy Editor` modal,
  click `AWS Policy Generator`.  This opens the AWS Policy Generator page.
 1.  On the AWS Policy Generator page

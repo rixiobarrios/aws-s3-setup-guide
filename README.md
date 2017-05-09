@@ -93,7 +93,7 @@ In the [S3](https://console.aws.amazon.com/s3) tab:
  This opens the `Create a Bucket - Select a Bucket Name and Region` modal.
 1.  Enter a name in the `Bucket Name` box. It must be unique among all S3
  buckets and in all lowercase characters.
-1.  Select `US Standard` for the `Region`.
+1.  Select `US East (N. Virginia)` for the `Region`.
 1.  Click `Create`.
 1.  Highlight your bucket and select the `Properties` tab on the right side.
 1.  Open the `Permissions` dropdown in the right sidebar.

@@ -17,7 +17,7 @@ Follow the steps outlined to create and gain programmatic access to an AWS S3
 -   A Credit card is required to verify your AWS account.
 
 If you do not have an account, open [AWS](https://aws.amazon.com/) and click
- `Sign In to the Console`.
+ `Create a Free Account`.
 Amazon provides a [free tier](http://aws.amazon.com/free/),
  with some limitations, for twelve months after you sign-up for an AWS account.
 

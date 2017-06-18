@@ -100,25 +100,18 @@ In the [S3](https://console.aws.amazon.com/s3) tab:
 1.  At the bottom of the `Bucket Policy Editor` page,
  click `Policy Generator`.  This opens the AWS Policy Generator page.
 1.  On the AWS Policy Generator page
-
 1.  Step 1: Select Policy Type
-
 1.  For `Select Type of Policy` use `S3 Bucket Policy`.
-
 1.  Step 2: Add Statement(s)
-
 1.  Select `Allow` for `Effect`.
 1.  Paste the User ARN into the `Principal` box.
 1.  Select `PutObject` and `PutObjectAcl` for `Actions`.
 1.  Enter `arn:aws:s3:::<bucket_name>/*` into the
           `Amazon Resource Name (ARN)` box.
 1.  Click the `Add Statement`.
-
 1.  Step 3: Generate Policy
-
 1.  Click `Generate Policy`
 1.  Copy the JSON from the `Policy JSON Document` modal.
-
 1.  Return to the S3 tab.
 1.  Paste the bucket policy into the `Bucket Policy Editor` field.
 1.  Click `Save`.

@@ -158,6 +158,8 @@ AWS provides many different mechanisms to grant and restrict access.
 -   [ ] Create a bucket policy.
 -   [ ] **DO NOT ALTER THE .gitignore FILE**
 
+If there are any concerns with the process, there is a visual guide of all the steps [here](https://git.generalassemb.ly/ga-wdi-boston/aws-s3-setup-guide/issues/37)
+
 ## [License](LICENSE)
 
 1.  All content is licensed under a CC­BY­NC­SA 4.0 license.

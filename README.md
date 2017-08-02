@@ -91,7 +91,7 @@ _Then_
 9.  Click on the security credentials tab.
 10.  Click the small `x` to the right of your existing access key to delete it.
 1.  Click `Create access key`
-1.  When you recieve a `Success` response, click `download .csv file` and save the CSV to this repository.(this is
+1.  When you recieve a `Success` response, click `download .csv file` and save the CSV to your `wdi` folder. (this is
 the only time you'll be able to see your access key, but you can generate a new one anytime
 and are encouraged to rotate them frequently)
 1.  Click `Close`

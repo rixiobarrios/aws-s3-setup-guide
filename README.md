@@ -92,13 +92,12 @@ S3 stores files you upload in `buckets`.  A bucket is a top-level namespace
 In the [S3](https://console.aws.amazon.com/s3) tab:
 
 1.  Click `Create Bucket`.
- This opens the `Create a Bucket - Select a Bucket Name and Region` modal.
-1.  Enter a name in the `Bucket Name` box. It must be unique among all S3
- buckets and in all lowercase characters.
+ This opens the `Create bucket` modal.
+1.  Enter a name in the `Bucket Name` box. It must be unique among all S3 buckets and in all lowercase characters.
 1.  Select `US East (N. Virginia)` for the `Region`.
 1.  Click `Create`.
-1.  Highlight your bucket and select the `Permissions` tab.
-1.  Click `Bucket policy` near the bottom of the `Permissions` tab.
+1.  Click your new bucket and select the `Permissions` tab.
+1.  Click `Bucket Policy`.
 1.  At the bottom of the `Bucket Policy Editor` page,
  click `Policy Generator`.  This opens the AWS Policy Generator page.
 1.  On the AWS Policy Generator page
@@ -120,11 +119,12 @@ In the [S3](https://console.aws.amazon.com/s3) tab:
 
         1.  Click `Generate Policy`
         1.  Copy the JSON from the `Policy JSON Document` modal.
+        1.  Close the modal.
+        1.  Close the Policy Generator tab.
 
 1.  Return to the S3 tab.
 1.  Paste the bucket policy into the `Bucket Policy Editor` field.
 1.  Click `Save`.
-1.  Click `Save` in the `Permissions` dropdown.
 
 You have now created and granted access to an S3 bucket.
 

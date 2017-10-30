@@ -78,11 +78,9 @@ In the [IAM](https://console.aws.amazon.com/iam) tab:
 ![image](https://git.generalassemb.ly/storage/user/5688/files/a4738e78-52c3-11e7-838e-908804d66370)
 
 1.  Click Next: Review
-![image](https://git.generalassemb.ly/storage/user/5688/files/a5f1e902-52c3-11e7-9ce2-c574affeeadd)
-
 1.  Click create User
+![image](https://git.generalassemb.ly/storage/user/5688/files/a5f1e902-52c3-11e7-9ce2-c574affeeadd)
 _Then_
-![image](https://git.generalassemb.ly/storage/user/5688/files/a6d9e0c2-52c3-11e7-81f6-39468e735eeb)
 
 1.  Click on your newly created user.
  - Make sure `wdi-upload` is checked.
@@ -94,6 +92,9 @@ _Then_
 1.  When you recieve a `Success` response, click `download .csv file` and save the CSV to your `wdi` folder. (this is
 the only time you'll be able to see your access key, but you can generate a new one anytime
 and are encouraged to rotate them frequently)
+
+![image](https://git.generalassemb.ly/storage/user/5688/files/a6d9e0c2-52c3-11e7-81f6-39468e735eeb)
+
 1.  Click `Close`
 1.  Copy the `User ARN` _(Amazon Resource Name)_ at the top of the page and save it in [arn.txt](arn.txt).
 
@@ -121,7 +122,6 @@ In the [S3](https://console.aws.amazon.com/s3) tab:
 1.  Select `US East (N. Virginia)` for the `Region`.
 1.  Click `Create`.
 1.  Highlight your bucket and select the `Permissions` tab.
-![image](https://git.generalassemb.ly/storage/user/5688/files/e3352baa-5433-11e7-8951-7bbf1e8b7f57)
 
 1.  Click `Bucket policy` near the bottom of the `Permissions` tab.
 ![image](https://git.generalassemb.ly/storage/user/5688/files/ae45bf3e-52c3-11e7-9070-f4ca72d5c8ab)
@@ -141,7 +141,7 @@ In the [S3](https://console.aws.amazon.com/s3) tab:
     - Make sure you add `/*` at the end of your user ARN for this step.
 ![image](https://git.generalassemb.ly/storage/user/5688/files/b02fbb2e-52c3-11e7-9e77-a95f6fceb508)
 
-1.  Click the `Add Statement`.
+1.  Click `Add Statement`.
 ![image](https://git.generalassemb.ly/storage/user/5688/files/b269d492-52c3-11e7-9a11-74afb54a90fc)
 1.  Step 3: Generate Policy
 1.  Click `Generate Policy`

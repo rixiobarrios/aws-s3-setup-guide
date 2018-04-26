@@ -138,7 +138,7 @@ In the [S3](https://console.aws.amazon.com/s3) tab:
 
 1.  Enter `arn:aws:s3:::<bucket_name>/*` into the
           `Amazon Resource Name (ARN)` box.
-    - Make sure you add `/*` at the end of your user ARN for this step.
+    - Make sure to remove '<' & '>' and add `/*` at the end of your user ARN for this step.
 ![image](https://git.generalassemb.ly/storage/user/5688/files/b02fbb2e-52c3-11e7-9e77-a95f6fceb508)
 
 1.  Click `Add Statement`.
@@ -194,7 +194,7 @@ AWS provides many different mechanisms to grant and restrict access.
 -   [ ] Save your ARN to arn.txt in this repo.
 -   [ ] Create an S3 bucket.
 -   [ ] Create a bucket policy.
--   [ ] **DO NOT ALTER THE .gitignore FILE**
+-   [ ] **DO NOT ALTER THE .gitignore FILE. Note well: credentials.csv contains secrets! Do not share them or store them in git. The .gitignore in this repository explicitly ignores this file. Altering the .gitignore file in this repository could result in your AWS credentials (credentials linked to your credit card information) being visible on Github. NEVER COMMIT SECRETS TO GIT.**
 
 If there are any concerns with the process, there is a visual guide of all the steps [here](https://git.generalassemb.ly/ga-wdi-boston/aws-s3-setup-guide/issues/37)
 

@@ -1,3 +1,6 @@
+# Secrets not to be shared
+.env
+accessKeys.csv
 
 # Created by https://www.gitignore.io/api/macos,linux
 

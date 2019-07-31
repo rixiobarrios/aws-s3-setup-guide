@@ -125,9 +125,14 @@ In the [S3](https://console.aws.amazon.com/s3) tab:
 1.  Select `US East (N. Virginia)` for the `Region`.
 1.  Click `Create` in the lower lefthand corner.
 1.  Highlight your bucket and select the `Permissions` tab.
-
+1.  Click `Block public access` near the bottom of the `Permissions` tab.
+![image](https://media.git.generalassemb.ly/user/16103/files/a9b69d00-b39f-11e9-9570-65e0b603526f)
+1.  Click `edit` and uncheck all boxes.
+1.  A popup will open and ask you to confirm this by typing 'confirm'.
+1.  This should save automatically. If you experience an error, try again.
+![image](https://media.git.generalassemb.ly/user/16103/files/074ae980-b3a0-11e9-8b97-5f19f25b2027)
 1.  Click `Bucket Policy` near the bottom of the `Permissions` tab.
-![image](https://git.generalassemb.ly/storage/user/5688/files/ae45bf3e-52c3-11e7-9070-f4ca72d5c8ab)
+![image](https://media.git.generalassemb.ly/user/16103/files/999ebd80-b39f-11e9-9f1e-2eba3a2cb962)
 1.  At the bottom of the `Bucket policy editor` page,
  click `Policy generator`.  This opens the AWS Policy Generator page.
 1.  On the AWS Policy Generator page
@@ -152,7 +157,7 @@ In the [S3](https://console.aws.amazon.com/s3) tab:
 1.  Click `Close`
 1.  Return to the S3 tab.
 1.  Paste the bucket policy into the `Bucket policy editor` field.
-![image](https://git.generalassemb.ly/storage/user/5688/files/b35a2d3e-52c3-11e7-86ca-9b5d8221bc14)
+![image](https://media.git.generalassemb.ly/user/16103/files/e931b900-b3a0-11e9-9b84-901c9d7b52ea)
 1.  Click `Save`.
 2.  Click on `Access Control List`
 3.  Click on your account

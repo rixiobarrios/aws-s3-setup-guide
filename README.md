@@ -42,7 +42,7 @@ Using restrictive access control with AWS ensures that even if an identity is
 
 1.  Open the [AWS Console](https://console.aws.amazon.com/console/) in your
  browser
-1.  From the `AWS` console, select `Services`, and open tabs for
+2.  From the `AWS` console, select `Services`, and open tabs for
  `IAM` _(Identity and Access Management)_ and `S3` _(Simple Storage Service)_.
 
 ### Identity and Access Management (IAM)
@@ -53,53 +53,65 @@ In the [IAM](https://console.aws.amazon.com/iam) tab:
 
 *Getting to the IAM tab:*
 
-![image](https://git.generalassemb.ly/storage/user/5688/files/96f5ca72-52c3-11e7-8d1f-03c42a2df2b4)
+![iam tab](https://git.generalassemb.ly/storage/user/5688/files/96f5ca72-52c3-11e7-8d1f-03c42a2df2b4)
 
-![image](https://git.generalassemb.ly/storage/user/5688/files/98790210-52c3-11e7-8fe3-3e56ff1253b2)
+![iam search](https://git.generalassemb.ly/storage/user/5688/files/98790210-52c3-11e7-8fe3-3e56ff1253b2)
 
 *Identity and Access Management (IAM)*
-![image](https://git.generalassemb.ly/storage/user/5688/files/9dc1e764-52c3-11e7-84b5-c743f27294e0)
+![iam dashboard](https://git.generalassemb.ly/storage/user/5688/files/9dc1e764-52c3-11e7-84b5-c743f27294e0)
 
 3.  Select `Users` in the left sidebar.
-![image](https://git.generalassemb.ly/storage/user/5688/files/9ee48afc-52c3-11e7-9f5c-fa9d9148317b)
 
+![users tab](https://git.generalassemb.ly/storage/user/5688/files/9ee48afc-52c3-11e7-9f5c-fa9d9148317b)
 
 4.  Click `Add User` near the top of the page.
 
-1.  Enter `wdi-upload` into the text box.
-![image](https://git.generalassemb.ly/storage/user/5688/files/a1a3a6ec-52c3-11e7-81bb-81f3c59556d7)
+5.  Enter `sei-upload` into the text box.
 
-1.  Under access type, check `Programmatic Access`
-![image](https://git.generalassemb.ly/storage/user/5688/files/a3047660-52c3-11e7-9698-fcd3201739bb)
+6.  Under access type, check `Programmatic Access`
 
-1.  Click `Next: Permissions`
+![user name and checked box](https://media.git.generalassemb.ly/user/16103/files/dc68a000-b448-11e9-8592-ca009ade22b8)
 
-1.  Highlight Add User to Group
-![image](https://git.generalassemb.ly/storage/user/5688/files/a4738e78-52c3-11e7-838e-908804d66370)
+7.  Click `Next: Permissions`
 
-1.  Click `Next: Review`
-1.  Click `Create user`
-![image](https://git.generalassemb.ly/storage/user/5688/files/a5f1e902-52c3-11e7-9ce2-c574affeeadd)
+8.  Highlight Add User to Group
 
-1.  Click `Close`
+![highlight add user to group](https://media.git.generalassemb.ly/user/16103/files/ee4b4280-b44a-11e9-901d-2ebfb3479af5)
+
+9.  Click `Next: Tags`
+
+10.  We can skip adding tags for now. Click `Next: Review`
+
+11.  Click `Create user`
+
+![create user](https://media.git.generalassemb.ly/user/16103/files/0ae77a80-b44b-11e9-8cef-da45f1c5b9e2)
+
+12.  Click `Close`
 
 _Then_
 
-12.  Click on your newly created user.
- - Make sure `wdi-upload` is checked.
- - Click directly on `wdi-upload`
-![image](https://git.generalassemb.ly/storage/user/5688/files/a9c3165a-52c3-11e7-8d89-262fca9e927c)
-1.  Click on the security credentials tab.
-1.  Click the small `x` to the right of your existing access key to delete it.
-1.  Click `Create access key`
-1.  When you recieve a `Success` response, click `Download .csv file` and save the CSV to your `wdi` folder. (this is
+13.  Click on your newly created user.
+ - Make sure `sei-upload` is checked.
+ - Click directly on `sei-upload`
+
+![click on user](https://media.git.generalassemb.ly/user/16103/files/80534b00-b44b-11e9-85a0-373f1970d78e)
+
+14.  Click on the security credentials tab.
+
+15.  Click the small `x` to the right of your existing access key to delete it.
+
+16.  Click `Create access key`
+
+17.  When you recieve a `Success` response, click `Download .csv file` and save the CSV to your `sei` folder. (this is
 the only time you'll be able to see your access key, but you can generate a new one anytime
 and are encouraged to rotate them frequently)
 
-![image](https://git.generalassemb.ly/storage/user/5688/files/a6d9e0c2-52c3-11e7-81f6-39468e735eeb)
+![download csv](https://media.git.generalassemb.ly/user/16103/files/5fd7c080-b44c-11e9-8b1a-44874875b54e)
 
-17.  Click `Close`
-1.  Copy the `User ARN` _(Amazon Resource Name)_ at the top of the page and save it in [arn.txt](arn.txt).
+18.  Click `Close`
+19.  Copy the `User ARN` _(Amazon Resource Name)_ at the top of the page and save it in [arn.txt](arn.txt).
+
+![user arn](https://media.git.generalassemb.ly/user/16103/files/e7253400-b44c-11e9-8663-135b5eddbebd)
 
 We'll need the User ARN to grant access to an S3 bucket we'll use for uploads.
 We'll also need an `Access Key` _(Access Key Id and Secret Access Key)_ for this
@@ -117,56 +129,75 @@ S3 stores files you upload in `buckets`.  A bucket is a top-level namespace
  for your files.
 
 In the [S3](https://console.aws.amazon.com/s3) tab:
-![image](https://git.generalassemb.ly/storage/user/5688/files/aafc6ab2-52c3-11e7-8351-04e5c253c092)
+![no buckets yet](https://media.git.generalassemb.ly/user/16103/files/7252f980-b44e-11e9-9c70-782854a03f89)
+
 1.  Click `Create Bucket`.
  This opens the `Create a Bucket - Select a Bucket Name and Region` modal.
-1.  Enter a name in the `Bucket name` box. It must be unique among all S3
+
+2.  Enter a name in the `Bucket name` box. It must be unique among all S3
  buckets and in all lowercase characters.
-1.  Select `US East (N. Virginia)` for the `Region`.
-1.  Click `Create` in the lower lefthand corner.
-1.  Highlight your bucket and select the `Permissions` tab.
-1.  Click `Block public access` near the bottom of the `Permissions` tab.
-![image](https://media.git.generalassemb.ly/user/16103/files/a9b69d00-b39f-11e9-9570-65e0b603526f)
-1.  Click `edit` and uncheck all boxes.
-1.  A popup will open and ask you to confirm this by typing 'confirm'.
-1.  This should save automatically. If you experience an error, try again.
-![image](https://media.git.generalassemb.ly/user/16103/files/074ae980-b3a0-11e9-8b97-5f19f25b2027)
-1.  Click `Bucket Policy` near the bottom of the `Permissions` tab.
-![image](https://media.git.generalassemb.ly/user/16103/files/999ebd80-b39f-11e9-9f1e-2eba3a2cb962)
-1.  At the bottom of the `Bucket policy editor` page,
+
+3.  Select `US East (N. Virginia)` for the `Region`.
+
+4.  Click `Create` in the lower lefthand corner.
+
+5.  Highlight your bucket and select the `Permissions` tab.
+
+6.  Click `Block public access` near the bottom of the `Permissions` tab.
+
+![click block public access](https://media.git.generalassemb.ly/user/16103/files/3d46a700-b44e-11e9-938d-f967247dd3b0)
+
+7.  Click `edit` and uncheck all boxes.
+8.  A popup will open and ask you to confirm this by typing 'confirm'.
+9.  This should save automatically. If you experience an error, try again.
+
+![block public access saved](https://media.git.generalassemb.ly/user/16103/files/074ae980-b3a0-11e9-8b97-5f19f25b2027)
+
+10.  Click `Bucket Policy` near the bottom of the `Permissions` tab.
+
+11.  At the bottom of the `Bucket policy editor` page,
  click `Policy generator`.  This opens the AWS Policy Generator page.
-1.  On the AWS Policy Generator page
-1.  Step 1: `Select Policy Type`
+
+![policy page and generator button](https://media.git.generalassemb.ly/user/16103/files/ea6cef80-b44d-11e9-9668-7a82a0fe43c7)
+
+
+#### On the AWS Policy Generator page
+
 1.  For `Select Type of Policy` use `S3 Bucket Policy`.
-1.  Step 2: `Add Statement(s)`
-1.  Select `Allow` for `Effect`.
-1.  Paste the User ARN that you saved in the `arn.txt` file into the `Principal` box.
-1.  Select `PutObject` and `PutObjectAcl` for `Actions`.
-![image](https://git.generalassemb.ly/storage/user/5688/files/af19a6a0-52c3-11e7-944b-bda14c01b7ec)
+2.  Under `Add Statement(s)`:
+    - Select `Allow` for `Effect`.
+    - Paste the User ARN that you saved in the `arn.txt` file into the `Principal` box.
+    - Select `PutObject` and `PutObjectAcl` for `Actions`.
 
-1.  Enter `arn:aws:s3:::<bucket_name>/*` into the
-          `Amazon Resource Name (ARN)` box.
+![add statements end result](https://git.generalassemb.ly/storage/user/5688/files/af19a6a0-52c3-11e7-944b-bda14c01b7ec)
+
+3.  Enter `arn:aws:s3:::<bucket_name>/*` into the `Amazon Resource Name (ARN)` box.
     - Make sure to remove '<' & '>' and keep `/*` at the end of your user ARN for this step.
-![image](https://git.generalassemb.ly/storage/user/5688/files/b02fbb2e-52c3-11e7-9e77-a95f6fceb508)
 
-1.  Click `Add Statement`.
-![image](https://git.generalassemb.ly/storage/user/5688/files/b269d492-52c3-11e7-9a11-74afb54a90fc)
-1.  Step 3: Generate Policy
-1.  Click `Generate Policy`
-1.  Copy the JSON from the `Policy JSON Document` modal.
-1.  Click `Close`
-1.  Return to the S3 tab.
-1.  Paste the bucket policy into the `Bucket policy editor` field.
-![image](https://media.git.generalassemb.ly/user/16103/files/e931b900-b3a0-11e9-9b84-901c9d7b52ea)
-1.  Click `Save`.
-2.  Click on `Access Control List`
-3.  Click on your account
-4.  A modal will pop up.
-1.  Click `Save` in the modal.
+![paste ARN](https://git.generalassemb.ly/storage/user/5688/files/b02fbb2e-52c3-11e7-9e77-a95f6fceb508)
+
+4.  Click `Add Statement`.
+
+![click add statement](https://git.generalassemb.ly/storage/user/5688/files/b269d492-52c3-11e7-9a11-74afb54a90fc)
+
+5.  Under `Generate Policy`:
+6.  Click `Generate Policy`
+7.  Copy the JSON from the `Policy JSON Document` modal.
+8.  Click `Close`
+9.  Return to the S3 tab.
+10.  Paste the bucket policy into the `Bucket policy editor` field.
+
+![paste bucket policy](https://media.git.generalassemb.ly/user/16103/files/e931b900-b3a0-11e9-9b84-901c9d7b52ea)
+
+11.  Click `Save`.
+12.  Click on `Access Control List`
+13.  Click on your account
+14.  A modal will pop up.
+15.  Click `Save` in the modal.
 
 You have now created and granted access to an S3 bucket.
 
-These steps limit upload access to one bucket for the identity `wdi-upload`.
+These steps limit upload access to one bucket for the identity `sei-upload`.
 
 This is one specific and restrictive way of implementing access control.
 AWS provides many different mechanisms to grant and restrict access.

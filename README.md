@@ -223,12 +223,11 @@ AWS provides many different mechanisms to grant and restrict access.
 }
 ```
 
-**NEVER COMMIT SECRETS TO GIT: Your credentials.csv contains secrets! Do not share them or store them in git. If you accidently push them. to GitHub, they will be found in _minutes_ with potentially very expensive consequences.
+**NEVER COMMIT SECRETS TO GIT: Your credentials.csv contains secrets! Do not share them or store them in git. If you accidently push them. to GitHub, they will be found in _minutes_ with potentially very expensive consequences.**
 
-Have I scared you?  If not, read [this](https://medium.com/@nagguru/exposing-your-aws-access-keys-on-github-can-be-extremely-costly-a-personal-experience-960be7aad039) and note the part that reads:
+Have I scared you?  If not, read [this](https://medium.com/@nagguru/exposing-your-aws-access-keys-on-github-can-be-extremely-costly-a-personal-experience-960be7aad039) and note the part where the author writes:
 
 > _Soon I received an email from Amazon to inform me that the account has been compromised and I should take action. Panicking, I went to the billing section to see there was a charge of over $3000 to date, and the projected cost was about $15000! I nearly had a heart attack._
-**
 
 ## Checklist
 

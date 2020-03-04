@@ -4,8 +4,6 @@
 
 ## Instructions
 
-Fork and clone this repository.
-
 Read over all the instructions before proceeding.
 
 Follow the steps outlined to create and gain programmatic access to an AWS S3
@@ -137,7 +135,7 @@ In the [S3](https://console.aws.amazon.com/s3) tab:
 2.  Enter a name in the `Bucket name` box. It must be unique among all S3
  buckets and in all lowercase characters.
 
-3.  Select `US East (N. Virginia)` for the `Region`.
+3.  Select a region close to you or choose `US East (N. Virginia)` for the `Region`.
 
 4.  Click `Create` in the lower lefthand corner.
 
@@ -225,6 +223,13 @@ AWS provides many different mechanisms to grant and restrict access.
 }
 ```
 
+**NEVER COMMIT SECRETS TO GIT: Your credentials.csv contains secrets! Do not share them or store them in git. If you accidently push them. to GitHub, they will be found in _minutes_ with potentially very expensive consequences.
+
+Have I scared you?  If not, read [this](https://medium.com/@nagguru/exposing-your-aws-access-keys-on-github-can-be-extremely-costly-a-personal-experience-960be7aad039) and note the part that reads:
+
+> _Soon I received an email from Amazon to inform me that the account has been compromised and I should take action. Panicking, I went to the billing section to see there was a charge of over $3000 to date, and the projected cost was about $15000! I nearly had a heart attack._
+**
+
 ## Checklist
 
 -   [ ] Create (or select) an AWS Identity.
@@ -234,10 +239,9 @@ AWS provides many different mechanisms to grant and restrict access.
 -   [ ] Create an S3 bucket.
 -   [ ] Set AWS Region to `US East (N. Virginia)`
 -   [ ] Create a bucket policy.
--   [ ] **DO NOT ALTER THE .gitignore FILE. Note well: credentials.csv contains secrets! Do not share them or store them in git. The .gitignore in this repository explicitly ignores this file. Altering the .gitignore file in this repository could result in your AWS credentials (credentials linked to your credit card information) being visible on Github. NEVER COMMIT SECRETS TO GIT.**
 
 ## [License](LICENSE)
 
 1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
+1.  All software code is licensed under GNU GPLv3. For commercial use or.
     alternative licensing, please contact legal@ga.co.

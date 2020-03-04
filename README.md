@@ -239,6 +239,11 @@ Have I scared you?  If not, read [this](https://medium.com/@nagguru/exposing-you
 -   [ ] Set AWS Region to `US East (N. Virginia)`
 -   [ ] Create a bucket policy.
 
+
+## Setup boto3
+
+Next, you'll want to set up boto3, which is the official Python library for S3.  Follow the instructions in the [boto3-setup-guide.md](boto3-setup-guide.md).
+
 ## [License](LICENSE)
 
 1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
